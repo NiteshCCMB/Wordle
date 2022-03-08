@@ -1,3 +1,8 @@
+if (!require("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+if (!require("tidyverse", quietly = TRUE))
+  install.packages("tidyverse")
+
 start_time <- Sys.time()
 library(tidyverse)
 
