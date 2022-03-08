@@ -1,3 +1,8 @@
+if (!require("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+if (!require("tidyverse", quietly = TRUE))
+  install.packages("tidyverse")
+
 file_list_to_guess = readline(prompt = "Enter the file name with words to guess : ")
 file_list_of_allowed_words = readline(prompt = "Enter the file name with list of allowed words : ")
 start_time <- Sys.time()
