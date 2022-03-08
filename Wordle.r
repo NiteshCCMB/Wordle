@@ -98,6 +98,7 @@ for (row_count in c(1:nrow(pans)))
   absent_letters = c()
   incorrect_position_table = tibble(letters = character(), positions = numeric())
   skip = FALSE
+  guess_word = rep('a', word_length)
   while(paste(guess_word,collapse = "") != paste(Word_to_guess,collapse = ""))
   {
     guess_counter = guess_counter + 1
